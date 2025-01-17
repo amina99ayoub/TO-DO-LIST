@@ -1,0 +1,157 @@
+:root{
+    --primary: #EA40A4;
+    --business: #3A82EE;
+    --light: #EEE;
+    --gray: #888;
+    --dark: #313154;
+    --danger: #ff5b57;
+
+}
+*{
+    margin:0;
+    padding:0;
+    font-family: 'montserrat', sans-serif;;
+
+}
+body{
+    background: var(--light);
+    color: var(--dark);
+}
+h3{
+    color: var(--dark);
+}
+h4{
+    color: var(--gray);
+}
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.app {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3, h4 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Greeting Section */
+.greeting input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Create Todo Section */
+.create-todo input[type="text"], .create-todo input[type="submit"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.create-todo .options {
+    display: flex;
+    gap: 20px;
+}
+
+.create-todo .options label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.create-todo .bubble {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.bubble.business {
+    background: #007bff;
+}
+
+.bubble.personal {
+    background: #ff4081;
+}
+
+/* Todo List Section */
+.todo-list .list {
+    margin-top: 20px;
+}
+
+.todo-list .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+}
+
+.todo-list .todo-item .content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo-list .todo-item button {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.todo-list .todo-item button:hover {
+    background-color: #e6005c;
+}
+.todo-item.completed {
+    opacity: 0.6; /* To make it look less prominent */
+}
+
+.todo-item.completed .content input {
+    text-decoration: line-through;
+    color: pink; /* Strikethrough in pink */
+    border: none; /* Remove border of input */
+    background-color: transparent; /* Make background match the parent */
+}
+/* General Styling for Completed Tasks */
+.todo-item.completed {
+    opacity: 0.6;
+}
+
+.todo-item.completed .content input {
+    text-decoration: line-through;
+    color: pink;
+    border: none;
+    background-color: transparent;
+}
